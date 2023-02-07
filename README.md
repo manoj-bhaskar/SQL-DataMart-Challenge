@@ -40,3 +40,8 @@ In a single query, perform the following operations and generate a new table in 
   * Add a **month_number** with the calendar month for each **week_date** value as the 3rd column
   * Add a **calendar_year** column as the 4th column containing either 2018, 2019 or 2020 values
   * Add a new column called **age_band** after the original **segment** column using the following mapping on the number inside the **segment** value
+  
+![This is an image](https://user-images.githubusercontent.com/124523532/217332642-091c33ce-17c2-4a0a-8cc0-258dd9cab027.png)
+
+ * Add a new **demographic** column using the following mapping for the first letter in the **segment** values:
+  
