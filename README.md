@@ -33,7 +33,7 @@ The columns are pretty self-explanatory based on the column names but here are s
 Each record in the dataset is related to a specific aggregated slice of the underlying sales data rolled up into a week_date value which represents the start of the sales week.
 
 ## Case Study Questions
-### 1. Data Cleansing Steps
+### Data Cleansing Steps
 In a single query, perform the following operations and generate a new table in the **data_mart** schema named **clean_weekly_sales**:
   * Convert the **week_date** to a **DATE** format
   * Add a **week_number** as the second column for each **week_date** value, for example any value from the 1st of January to 7th of January will be 1, 8th to 14th will be 2 etc
@@ -45,3 +45,25 @@ In a single query, perform the following operations and generate a new table in 
 
  * Add a new **demographic** column using the following mapping for the first letter in the **segment** values:
   
+![This is an image](https://user-images.githubusercontent.com/124523532/217333391-0931815c-f729-4f4f-a160-eff200c41d02.png)
+
+ * Ensure all **null** string values with an **"unknown"** string value in the original **segment** column as well as the new **age_band** and **demographic** columns
+ * Generate a new **avg_transaction** column as the **sales** value divided by **transactions** rounded to 2 decimal places for each record
+ 
+### Data Exploration
+ 
+ * What day of the week is used for each **week_date** value?
+ * What range of week numbers are missing from the dataset?
+ * How many total transactions were there for each year in the dataset?
+ * What is the total sales for each region for each month?
+ * What is the total count of transactions for each platform
+ * What is the percentage of sales for Retail vs Shopify for each month?
+ * What is the percentage of sales by demographic for each year in the dataset?
+ * Which **age_band** and **demographic** values contribute the most to Retail sales?
+ * Find the average transaction size for each year for Retail vs Shopify?
+ 
+### Insight Generated
+ 
+What was the quantifiable impact of the changes introduced in June 2020?
+
+Ans: The company incurred 42.04% loss due to the changes introduced in june 2020
