@@ -77,7 +77,7 @@ where segment = "null";
 
 
 
-															  /* DATA EXPLORATION*/
+								  /* DATA EXPLORATION*/
                                                               
 /* 1) What day of the week is used for each week_date value? */
 select dayname(week_date) as day_name from weekly_sales;
@@ -194,7 +194,7 @@ from weekly_sales
 group by year(week_date)
 order by year(week_date) desc;
 
-                                                       /* Insights Generated */
+                                                             	   /* Insights Generated */
 
 /* What was the quantifiable impact of the changes introduced in June 2020? */
 
